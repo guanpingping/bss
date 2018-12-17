@@ -1,0 +1,121 @@
+body{
+    background: #fff;
+}
+.menubox{
+    display: none;
+}
+#main{
+    width: 1100px;
+    margin: 0 auto;
+    .main-top{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    .nopro{
+        text-align: center;
+        font-size: 30px;
+        padding: 50px;
+        margin: 10px 0 100px 0;
+        border: 1px solid #ccc;
+        a{
+            font-size: 14px;
+        }
+    }
+    .prolist{
+        padding: 40px 0;
+        overflow: hidden;
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            line-height: 30px;
+            font-size: 14px;
+           th{
+               height: 40px;
+               background: #eee;
+               font-weight: normal;
+               .qx{
+                   vertical-align: text-bottom;
+                   margin-right: 10px;
+               }
+           }
+           input[type="checkbox"]{
+               width: 20px;
+               height: 20px;
+               vertical-align: middle;
+               cursor: pointer;
+           }
+           tr{
+               margin-bottom: 10px;
+               td{
+                   padding: 10px 0;
+                   border-bottom: 1px dashed #ccc;
+                   img{
+                       width: 60px;
+                       margin-right: 20px;
+                       vertical-align: middle;
+                       display: inline-block;
+                   }
+                   .pro-txt{
+                       display: inline-block;
+                   }
+                   i{
+                       font-style: normal;
+                   }
+                   input[type="button"]{
+                       background:none;
+                       border: 1px solid #ccc;
+                   }
+                   input[class="updateCount"]{
+                       height: 30px;
+                       width: 20px;
+                       cursor: pointer;
+                   }
+                    input[class="txt"]{
+                       height: 30px;
+                       width: 40px;
+                   }
+                   input[class="single"]{
+                       margin-left: 12px;
+                   }
+                   
+               }
+               .pro-price-tol{
+                   color: #f60;
+               }
+               .tr-center{
+                   text-align: center;
+               }
+           }
+        }
+        .prosum{
+            margin:30px 10px;
+            font-size: 18px;
+            text-align: right;
+            line-height: 30px;
+            i{
+                font-style: normal;
+                color: #666;
+                margin:0 10px;
+            }
+        }
+        .gomoney{
+            text-align: right;
+            button{
+                width: 120px;
+                height: 40px;
+                font-size: 18px;
+                line-height: 40px;
+                border: 0;
+                background: #FF6600;
+                color:#fff;
+            }
+        }
+    }
+}
+.delBtn{
+    cursor: pointer;
+}
+.clearshopcar{
+    margin-top: 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login-register.css"/>
+	</head>
+	<body>
+		<div class="login-wrap">
+			<div class="login-top">
+				<img src="../img/login.jpg"/>
+			</div>
+			<div class="login-con">
+				<div class="login-form">
+					<form class="form-log" action="/login" method="post">
+						<div class="tit"><b>用户登录</b><a href="http://127.0.0.1/mailegou/html/login-register.html?status=register">免费快速注册</a></div>
+						<div class="group"><i class="una"><img src="../img/login-1.jpg"/></i><input type="text" placeholder="手机号码/邮箱/用户名" id="uname" class="uname" name="uname"/></div>
+						<div class="error errorname"></div>
+						<div class="group"><i class="upw"><img src="../img/login-2.jpg"/></i><input type="text" placeholder="密码" id="upwd" class="upwd" name="upwd"/></div>
+						<div class="error pwderror"></div>
+						<div class="group">
+							<input type="text" placeholder="验证码"  id="uyzm" class="uyzm"/>
+							<div id="yzm" class="yzm"></div><span id="reyzm" class="reyzm">换一张</span>
+						</div>
+						<div class="error yzmerror"></div>
+						<div class="wjpwd">忘记密码？</div>
+						<div class="group logbtn">
+							<!--<input type="button" value="登录" id="ubtn" class="ubtn">-->
+							<input type="submit" value="登录" id="ubtn" class="ubtn" />
+						</div>
+						<div class="group otherlogin ">使用其他账号登录：&emsp;<span></span></div>
+					</form>
+				</div>
+				<div class="register-form">
+					<div class="tit"><b>新用户注册</b><a href="http://127.0.0.1/mailegou/html/login-register.html?status=login">已有麦乐购账号，直接登录</a></div>
+					<ul class="ul" id="regul">
+						<li class="active">手机注册</li>
+						<li>邮箱注册</li>
+						<li class="last"></li>
+					</ul>
+					<div class="reg-box">
+						<form class="form-log" action="/register" method="post">
+							<div class="group"><input type="text" placeholder="请输入手机号" id="regname" class="uname" name="regname"/></div>
+							<div class="error unamerror"></div>
+							<div class="group"><input type="text" placeholder="请输入密码" id="regpwd" class="upwd" name="regpwd"/></div>
+							<div class="error pwderror"></div>
+							<div class="group"><input type="text" placeholder="请再次输入密码" id="rpwd" name="rpwd"/></div>
+							<div class="error rpwderror"></div>
+							<div class="group">
+								<input type="text" placeholder="请输入验证码"  id="regyzm" class="uyzm"/>
+								<div id="oyzm" class="yzm"></div><span id="ryzm" class="reyzm">换一张</span>
+							</div>
+							<div class="error yzmerror"></div>
+							<div class="group">
+								<input type="text" placeholder="短信校验码"  id="telyzm" class="telyzm"/>
+								<button class="telxym">获取短信验证码</button>
+							</div>
+							<div class="error errorxzm"></div>
+							<div class="group"><input type="text" placeholder="请输入手机号" id="regtel" style="display: none;"/></div>
+							<div class="error errortel"></div>
+							<div class="agreebox"><input type="checkbox" id="agreecheck" class="agree"/>&emsp;已阅读并同意 <span>《麦乐购注册协议及交易》</span></div>
+							<div class="error erroragree"></div>
+							<div class="group registerbtn">
+								<!--<input type="button" value="立即注册" id="regbtn" class="ubtn">-->
+								<input type="submit" id="regbtn" class="ubtn" value="立即注册" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<div id="footer-wrap"></div>
+	</body>
+</html>
+
+<script src="../js/public.js"></script>
+<script src="../js/jquery-1.11.1.min.js"></script>
+<script>
+	/*加载公共的尾部*/
+	$("#footer-wrap").load("public.html footer");
+</script>
+<script src="../js/login-register.js"></script>

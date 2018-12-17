@@ -1,0 +1,607 @@
+body {
+  background: #fff;
+}
+
+#main {
+  overflow: hidden;
+}
+
+.menubox {
+  display: none;
+}
+
+#header-wrap .open-menu-btn {
+  cursor: pointer;
+}
+
+.main-top {
+  height: 40px;
+  line-height: 40px;
+  border-top: 1px solid #000;
+}
+
+.main-top .main-top-con {
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.main-top .main-top-con i {
+  color: #B8B8B8;
+  font-style: normal;
+}
+
+.wrapper-proinfo {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.proinfo-left {
+  float: left;
+}
+.proinfo-left .video-box {
+  z-index: 100;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.proinfo-left .video-box video {
+  width: 350px;
+  height: 350px;
+  background: #000;
+}
+.proinfo-left .video-box .video-close {
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 320px;
+  background: url(../img/xianqingyeicon.png) no-repeat -854px -824px;
+  cursor: pointer;
+}
+.proinfo-left .video-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 300px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: url(../img/xianqingyeicon.png) no-repeat -1016px -200px;
+  z-index: 99;
+}
+
+.box {
+  width: 350px;
+  height: 400px;
+  position: relative;
+  z-index: 99;
+}
+
+.box .middle {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.box .middle img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.box .small {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 350px;
+  left: 0px;
+  box-sizing: border-box;
+}
+.box .small img {
+  display: inline-block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: 16px;
+  box-sizing: border-box;
+}
+
+.box .big {
+  width: 400px;
+  height: 400px;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 0px;
+  left: 360px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: none;
+}
+.box .big img {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.box .mask {
+  width: 175px;
+  height: 175px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.proinfo-main {
+  padding: 0 30px;
+  float: left;
+}
+.proinfo-main .proinfo-tit {
+  padding: 13px 10px 12px;
+  height: 94px;
+  box-sizing: border-box;
+}
+.proinfo-main .proinfo-tit h2 {
+  min-height: 24px;
+  font-size: 16px;
+}
+.proinfo-main .proinfo-tit h2 span {
+  font-size: 12px;
+  width: 50px;
+  height: 24px;
+  display: inline-block;
+  line-height: 24px;
+  text-align: center;
+  background: #f50;
+  color: #fff;
+}
+.proinfo-main .proinfo-tit p {
+  color: #f60;
+}
+.proinfo-main .proinfo-tit p a {
+  color: #6a9fde;
+  text-decoration: underline;
+}
+.proinfo-main .tit-img {
+  height: 40px;
+  width: 100%;
+}
+.proinfo-main .proinfo-price .proinfo-price-back {
+  position: relative;
+  padding: 14px 0 8px;
+  background: url(../img/xqyprice.png) no-repeat;
+  margin-bottom: 15px;
+}
+.proinfo-main .proinfo-price dl {
+  overflow: hidden;
+  line-height: 30px;
+  height: auto;
+  margin-bottom: 2px;
+  padding-left: 10px;
+}
+.proinfo-main .proinfo-price dl dt {
+  color: #999;
+  float: left;
+  width: 72px;
+  letter-spacing: .5em;
+}
+.proinfo-main .proinfo-price dl dd {
+  float: left;
+}
+.proinfo-main .proinfo-price dl dd a {
+  margin: 0 10px;
+  color: #38d;
+}
+.proinfo-main .proinfo-price dl dd .updateCount {
+  width: 22px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+.proinfo-main .proinfo-price dl dd #add {
+  margin-right: 10px;
+}
+.proinfo-main .proinfo-price dl dd .txt {
+  width: 37px;
+  height: 30px;
+  padding: 5px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #fff;
+}
+.proinfo-main .proinfo-price dl .yigoujia {
+  color: #e00;
+  font-size: 30px;
+  font-weight: 700;
+}
+.proinfo-main .proinfo-price dl .yigoujia i {
+  font-size: 18px;
+  font-style: normal;
+}
+.proinfo-main .proinfo-price dl .yigoujia span {
+  font-size: 24px;
+}
+.proinfo-main .proinfo-price dl .youhuijuan span {
+  width: 65px;
+  height: 18px;
+  display: inline-block;
+  background: url(../img/xianqingyeicon.png) no-repeat -359px -406px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.proinfo-main .proinfo-price dl .group {
+  margin-left: 72px;
+}
+.proinfo-main .proinfo-price dl .olabel {
+  margin-right: 10px;
+}
+.proinfo-main .proinfo-price dl .olabel label {
+  display: inline-block;
+  width: 52px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  color: #FF6600;
+  border: 1px solid #FF6600;
+  position: relative;
+}
+.proinfo-main .proinfo-price dl .olabel .lsj {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border: 4px solid #ccc;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  margin-left: 4px;
+}
+.proinfo-main .proinfo-price dl .marginr0 {
+  margin-right: 0;
+}
+.proinfo-main .proinfo-price dl .unique img {
+  margin-left: -4px;
+  margin-bottom: 30px;
+}
+.proinfo-main .proinfo-price .super-con {
+  line-height: 18px;
+  overflow: hidden;
+  margin-top: 8px;
+}
+.proinfo-main .proinfo-price .super-con dd img {
+  display: inline-block;
+  vertical-align: text-bottom;
+}
+.proinfo-main .proinfo-price .super-con .group {
+  margin-right: 10px;
+}
+.proinfo-main .proinfo-price .super-agreements {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+.proinfo-main .proinfo-price .super-agreements a {
+  display: inline-block;
+  text-align: right;
+  line-height: 18px;
+}
+.proinfo-main .proinfo-price .super-agreements a dd:nth-of-type(1) {
+  float: right;
+}
+.proinfo-main .proinfo-price .super-agreements a dd:nth-of-type(2) {
+  float: right;
+  clear: right;
+  color: #666666;
+  font-weight: 600;
+}
+.proinfo-main .proinfo-price .kf img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.proinfo-main .proinfo-price .proinfo-item {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px dotted #ccc;
+}
+.proinfo-main .proinfo-price .proinfo-item ul {
+  width: 484px;
+  float: left;
+}
+.proinfo-main .proinfo-price .proinfo-item ul li {
+  margin: 0 5px 5px 0;
+  border: 1px solid #ccc;
+  padding: 1px 8px 1px 1px;
+  min-width: 60px;
+  text-align: center;
+}
+.proinfo-main .proinfo-price .proinfo-item ul li a {
+  margin: 0;
+}
+.proinfo-main .proinfo-price .proinfo-item ul li a img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 36px;
+  height: 36px;
+  margin-right: 4px;
+}
+.proinfo-main .proinfo-price .shop {
+  clear: left;
+  padding: 15px 11px;
+  border-bottom: 1px dotted #ccc;
+}
+.proinfo-main .proinfo-price .shop .shopbtn {
+  border: 0;
+  margin-right: 10px;
+  color: #fff;
+}
+.proinfo-main .proinfo-price .shop .shopbtn .gomoney {
+  padding: 5px 15px;
+  background: #000;
+}
+.proinfo-main .proinfo-price .shop .shopbtn .addshop {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #f60;
+}
+
+.content {
+  width: 1190px;
+  height: auto;
+  margin: 10px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+.content .content-left {
+  width: 190px;
+  float: left;
+  min-height: 500px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.content .content-left .left-tit {
+  padding-left: 10px;
+  line-height: 34px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.content .content-left .left-con .left-con-group {
+  padding: 10px 0;
+  margin: 1px 10px -1px;
+}
+.content .content-left .left-con .left-con-group a img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+.content .content-left .left-con .left-con-group p {
+  height: 36px;
+  margin: 5px 0;
+}
+.content .content-left .left-con .left-con-group p span {
+  background: #f60;
+  color: #FFFFFF;
+}
+.content .content-left .left-con .left-con-group p i {
+  font-style: normal;
+  color: #f60;
+}
+.content .content-right {
+  width: 988px;
+  box-sizing: border-box;
+  margin-left: 10px;
+  float: left;
+  border: 1px solid #ccc;
+}
+.content .content-right .right-tit {
+  height: 47px;
+  line-height: 47px;
+  background: #ddd;
+  font-size: 14px;
+  width: 986px;
+  z-index: 9;
+}
+.content .content-right .right-tit ul .tit-active {
+  background: #fff;
+  border-top: 2px solid #f60;
+  color: #f60;
+  height: 47px;
+  box-sizing: border-box;
+}
+.content .content-right .right-tit ul li {
+  padding: 0 25px;
+}
+.content .content-right .right-tit .right-tit-r {
+  background: #f60;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  color: #fff;
+  text-align: center;
+}
+.content .content-right .right-con-group {
+  display: none;
+}
+.content .content-right .right-con-group .con-group {
+  height: 220px;
+  background-color: #fff7e8;
+}
+.content .content-right .right-con-group .con-group .con-group-left {
+  width: 245px;
+  padding: 18px;
+  border-right: 1px solid #eb7c00;
+  overflow: hidden;
+  float: left;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-t .allper {
+  font-size: 48px;
+  color: #EB7C00;
+  float: left;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-t .agreeall {
+  float: left;
+  line-height: 20px;
+  margin: 10px 0 0 20px;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-t .agreeall span {
+  display: block;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-t .agreeall span:nth-of-type(1) {
+  color: #000;
+  font-size: 14px;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-t .agreeall span:nth-of-type(2) {
+  color: #666;
+  font-size: 12px;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-b ul li {
+  line-height: 24px;
+  height: 24px;
+}
+.content .content-right .right-con-group .con-group .con-group-left .cont-group-left-b ul li span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 130px;
+  height: 15px;
+  background: #FF6600;
+}
+.content .content-right .right-con-group .con-group .con-group-ri {
+  float: left;
+  padding: 14px 20px;
+  line-height: 30px;
+  width: 666px;
+  box-sizing: border-box;
+}
+.content .content-right .right-con-group .con-group .con-group-ri .look {
+  float: right;
+  color: #3388DD;
+}
+.content .content-right .right-con-group .con-group .con-group-ri h2 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #FF6600;
+}
+.content .content-right .right-con-group .con-group .con-group-ri .spancolor000 {
+  color: #000;
+}
+.content .content-right .right-con-group .con-group .con-group-ri .bordbot {
+  color: #900;
+  border-bottom: 1px dashed #ccc;
+}
+.content .content-right .right-con-group .con-group .con-group-ri .bordbot span {
+  margin-right: 20px;
+}
+.content .content-right .right-con-group .right-con-three {
+  padding: 10px;
+}
+.content .content-right .right-con-group .right-con-three li {
+  padding: 10px 0;
+  line-height: 24px;
+}
+.content .content-right .proinfo-canshu {
+  width: 780px;
+}
+.content .content-right .proinfo-canshu .group-parameter {
+  overflow: hidden;
+  float: left;
+}
+.content .content-right .proinfo-canshu .gp-he {
+  margin: 20px;
+  color: #666;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  width: 746px;
+}
+.content .content-right .proinfo-canshu .gp-he-con {
+  width: 746px;
+  box-sizing: border-box;
+  padding: 20px 18px;
+  overflow: hidden;
+}
+.content .content-right .proinfo-canshu .gp-he-con li {
+  width: 50%;
+  box-sizing: border-box;
+  text-align: left;
+  height: 20px;
+}
+.content .content-right .proinfo-canshu .gp-he-tit {
+  height: 30px;
+  line-height: 30px;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+}
+.content .content-right .proinfo-canshu .gp-he-tit .gp-he-le {
+  float: left;
+  font-weight: 600;
+}
+.content .content-right .proinfo-canshu .gp-he-tit .gp-he-ri {
+  float: right;
+  margin-right: 10px;
+}
+.content .content-right .proinfo-canshu .gp-he-tit .gp-he-ri a {
+  color: #6A9FDE;
+}
+.content .content-right .proinfo-canshu .group-right-position {
+  position: relative;
+  margin-left: 827px;
+  background: #f9fafb;
+  top: 20px;
+  height: 12060px;
+  width: 159px;
+}
+.content .content-right .proinfo-canshu .group-right-position ul {
+  position: absolute;
+  top: auto;
+  width: 159px;
+  font-size: 14px;
+  padding: 68px 0 100px 0;
+  line-height: 38px;
+}
+.content .content-right .proinfo-canshu .group-right-position ul li {
+  height: 38px;
+  float: none;
+  padding-left: 20px;
+}
+.content .content-right .proinfo-canshu .group-right-position ul .rpoi-active {
+  background: #FF6600;
+  position: relative;
+  color: #fff;
+}
+.content .content-right .proinfo-canshu .group-right-position ul .rpoi-active::after {
+  content: "";
+  border: 8px solid  #f60;
+  height: 0;
+  width: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  position: absolute;
+  top: 30%;
+  left: -16px;
+}
+.content .content-right .proinfo-canshu .gp-detail {
+  padding: 20px;
+}
+.content .content-right .proinfo-canshu .gp-detail img {
+  width: 100%;
+}
+
+.shopcarbtn button {
+  border: 0;
+  background: #FF6600;
+  width: 100px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=xianqingye.css.map */

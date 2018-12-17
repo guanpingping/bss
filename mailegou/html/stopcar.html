@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/common.css" type="text/css"/>
+		<link rel="stylesheet" type="text/css" href="../css/shopcar.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--头部-->
+			<div id="header-wrap"></div>
+			<!--主体-->
+			<div id="main">
+				<div class="main-top">
+					<p>我的购物车</p>
+				</div>
+				<div class="prolist">
+					<div class="shop-item">
+						<table class="table-list">
+							<tr>
+								<th><input type="checkbox" class="selectAll"/>&emsp;全选</th>
+								<th>商品</th>
+								<th>单价</th>
+								<th>数量</th>
+								<th>金额小计</th>
+								<th>操作</th>
+							</tr>
+							<tr>
+								<td colspan="6">
+									以下商品由<span>母婴商城</span>发货&emsp;免配送费
+								</td>
+							</tr>
+							<!--<tr>
+								<td><input type="checkbox" class="single"/></td>
+								<td>
+									<img src="../img/list1.jpg"/>
+									<div class="pro-txt">港版惠氏Wyeth S-26金装幼儿乐配方奶粉2段 6-12个月*2罐</div>
+								</td>
+								<td class="tr-center pro-price">
+									￥90.00
+								</td>
+								<td  class="tr-center">
+									<input type="button" value="-" class="updateCount"  data-number="-1"/>
+									<input type="button" value="1" id="num" class="txt"/>
+									<input type="button" value="+" class="updateCount" id="add"  data-number="1"/>
+								</td>
+								<td  class="tr-center pro-price-tol">
+									￥180.00
+								</td>
+								<td  class="tr-center">
+									<i class="fl delBtn">删除</i>
+								</td>
+							</tr>-->
+						</table>
+					</div>
+					<div class="clearshopcar">
+						清空购物车
+					</div>
+					<div id="sum" class="prosum">
+						商品数量总计：<span class="count2">0</span>件<i>折后商品金额总计：</i><span class="money2">￥0.00</span>
+					</div>
+					<div class="gomoney">
+						<button id="gomoney">去结算</button>
+					</div>
+				</div>
+				<div class="nopro" style="display: none;">
+					<p>购物车空空如也~去买点什么吧！</p>
+					<a href="list.html">您的购物车暂无任何商品，回商品页挑选吧！</a>
+				</div>
+			</div>
+			<!--尾部-->
+			<div id="footer-wrap"></div>
+		</div>
+		<!--加载公共的头部和尾部-->
+		<script src="../js/public.js"></script>
+		<script type="text/javascript" src="../js/jquery-1.11.1.min.js" ></script>
+		<script>
+			$("#header-wrap").load("public.html header");
+			$("#footer-wrap").load("public.html footer");
+		</script>
+	</body>
+</html>
+<script>
+	window.onload = function(){
+		var scr = document.createElement("script");
+		document.body.appendChild( scr );
+		scr.src="../js/common.js";
+		
+		var shoplist = document.createElement("script");
+		document.body.appendChild( shoplist );
+		shoplist.src="../js/shopcarlist.js";
+		
+		var s = document.createElement("script");
+		document.body.appendChild( s );
+		s.src="../js/search.js";
+	}
+</script>

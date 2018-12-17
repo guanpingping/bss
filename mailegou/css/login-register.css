@@ -1,0 +1,180 @@
+body{
+	background: #fff;
+}
+button{
+	outline: none;
+}
+.login-top img{
+	margin: 0 auto;
+}
+.login-con{
+	min-height:654px;
+	background: url(../img/login-bg.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+.login-con .login-form,
+.login-con .register-form{
+	width: 400px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	position: absolute;
+	top: 20px;
+	right: 20%;
+	min-height: 435px;
+	padding: 0 40px 40px;
+	box-sizing: border-box;
+}
+
+.login-con .tit{
+	line-height: 68px;
+	height: 48px;
+}
+.login-con .tit b{
+	float: left;
+	font-size: 20px;
+	color: #444;
+}
+.login-con .tit a{
+	float: right;
+	color: #999;
+}
+.login-con input{
+	height: 40px;
+	width: 100%;
+	border: 1px solid #dedede;
+	text-indent: 50px;
+	box-sizing: border-box;
+}
+.login-con .group{
+	margin-top: 24px;
+	overflow: hidden;
+	line-height: 40px;
+	position: relative;
+}
+.login-con .login-form .group i{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 0;
+	left: 0;
+}
+.login-con .login-form .group i img{
+	width: 100%;
+	height: 100%;
+}
+.login-con .uyzm,
+.register-form .telyzm{
+	width: 108px;
+	float: left;
+	text-indent: 10px;
+}
+.login-con  .yzm{
+	background: url(../img/yzm.png) no-repeat;
+	width: 110px;
+	height: 40px;	
+	margin: 0 10px;
+	float: left;
+	font-size: 28px;
+	text-align: center;
+}
+.login-con .login-form .wjpwd{
+	text-align: right;
+}
+.login-con .login-form .logbtn{
+	margin-top: 5px;
+}
+.login-con .ubtn{
+	text-indent: 0;
+	background: #e83917;
+	font-size: 20px;
+	color: #fff;
+}
+.login-con  .reyzm,
+.login-con  .ubtn,
+.login-con .register-form .ul li:not(.last){
+	cursor: pointer;
+}
+.login-con .login-form .otherlogin span{
+	display: inline-block;
+	vertical-align: middle;
+	width: 126px;
+	height: 20px;
+	background: url(../img/login2.jpg) no-repeat;
+}
+.login-con .error{
+	font-size: 12px;
+	color: red;
+	display: none;
+}
+
+/*注册页面*/
+.login-con .register-form .form-log input{
+	text-indent: 10px;
+}
+.login-con .register-form .ul{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.login-con .register-form .ul li{
+	padding: 5px 0;
+	margin-bottom: 7px;
+	width: 50%;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 14px;
+	color: #666;
+	float: left;
+	border-bottom: 2px solid #DEDEDE;
+}
+.login-con .register-form .ul .active{
+	color: #e83917;
+}
+.login-con .register-form .ul .last{
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	width: 50%;
+	border-bottom-color: #e83917;
+}
+.login-con .register-form .ul .last::after{
+	content: "";
+	height: 0;
+	width: 0;
+	border: 7px solid #e83917;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+	position: absolute;
+	bottom: -16px;
+	left: 48%;
+}
+.email-form{
+	display: none;
+}
+.login-con .register-form .group .telxym{
+	margin-left: 10px;
+	width: 120px;
+	height: 40px;
+	border: 1px solid #ccc;
+}
+.login-con .register-form .agreebox{
+	margin-top: 24px;
+}
+.login-con .register-form .registerbtn{
+	margin-top: 5px;
+}
+.login-con .register-form .form-log .agree{
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+}
+footer{
+	height:210px;
+}
+
+

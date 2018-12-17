@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+	<body>
+		<!--------------------头部--------------------------------------->
+		<div id="head-wrap"></div>
+		<!--------------------主体--------------------------------------->
+		<div id="main">
+			<div class="proinfo-wrap">
+				<ul class="shoplist" style="position: relative;">
+					<!--<li>
+						<a href="xianqingye.html">
+							<img src="../img/1m.jpg" />
+							<p class="proinfo-txt">港版惠氏Wyeth S-26金装幼儿乐配方奶粉3段 1-3岁*2罐</p>
+							<p class="proinfo-price">￥399<del>￥799</del></p>
+						</a>
+						<button>加入购物车</button>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+		<!---------------------尾部------------------------------>
+		<div id="foot-wrap"></div>
+		<!--加载公共头部和尾部-->
+		<script src="../js/public.js"></script>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+		<script>
+			$("#head-wrap").load("public.html header");
+			$("#foot-wrap").load("public.html footer");
+		</script>
+	</body>
+</html>
+<script>
+	window.onload = function(){
+		var scr = document.createElement("script");
+		document.body.appendChild( scr );
+		scr.src="../js/common.js";
+		
+		var script = document.createElement("script");
+		document.body.appendChild( script );
+		script.src="../js/list.js";
+		
+		var shop = document.createElement("script");
+		document.body.appendChild( shop );
+		shop.src="../js/shopcar.js";
+		
+		var s = document.createElement("script");
+		document.body.appendChild( s );
+		s.src="../js/search.js";
+	}
+</script>

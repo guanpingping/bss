@@ -1,0 +1,63 @@
+body {
+  background: #fff;
+}
+.menubox{
+    display: none;
+}
+#main{
+    width: 100%;
+    min-height: 500px;
+    .proinfo-wrap{
+        padding: 50px;
+        overflow: hidden;
+        ul{
+            width: 1190px;
+            margin: 0 auto;
+            li{
+                border:1px solid #ccc;
+                background: #fff;
+                width: 222px;
+                margin: 0 10px 10px 0;
+                padding: 10px;
+                box-sizing: border-box;
+                a{
+                    &:hover{
+                        img{
+                           transform :scale(1.1);
+                        }
+                    }
+                    img{
+                        transform: scale(1);
+                        width: 200px;
+                        height: 200px;
+                        transition: all 1s;
+                    }
+                    .proinfo-txt{
+                        margin-top: 20px;
+                        line-height: 24px;
+                    }
+                    .proinfo-price{
+                        padding-bottom: 10px;
+                        color: #FF4400;
+                        font-weight: 600;
+                        font-size: 16px;
+                        del{
+                            color: #CCCCCC;
+                            font-weight:500;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                 button{
+                        width: 100px;
+                        height: 30px;
+                        background: #eee;
+                        display: block;
+                        border: 1px solid #ddd;
+                        margin: 0 auto;
+                        cursor: pointer;
+                    }
+            }
+        }
+    }
+}

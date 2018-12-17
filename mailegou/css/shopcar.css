@@ -1,0 +1,126 @@
+body {
+  background: #fff;
+}
+
+.menubox {
+  display: none;
+}
+
+#main {
+  width: 1100px;
+  margin: 0 auto;
+}
+#main .main-top {
+  margin-top: 30px;
+  font-size: 16px;
+}
+#main .nopro {
+  text-align: center;
+  font-size: 30px;
+  padding: 50px;
+  margin: 10px 0 100px 0;
+  border: 1px solid #ccc;
+}
+#main .nopro a {
+  font-size: 14px;
+}
+#main .prolist {
+  padding: 40px 0;
+  overflow: hidden;
+}
+#main .prolist table {
+  width: 100%;
+  border-collapse: collapse;
+  line-height: 30px;
+  font-size: 14px;
+}
+#main .prolist table th {
+  height: 40px;
+  background: #eee;
+  font-weight: normal;
+}
+#main .prolist table th .qx {
+  vertical-align: text-bottom;
+  margin-right: 10px;
+}
+#main .prolist table input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+#main .prolist table tr {
+  margin-bottom: 10px;
+}
+#main .prolist table tr td {
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+#main .prolist table tr td img {
+  width: 60px;
+  margin-right: 20px;
+  vertical-align: middle;
+  display: inline-block;
+}
+#main .prolist table tr td .pro-txt {
+  display: inline-block;
+}
+#main .prolist table tr td i {
+  font-style: normal;
+}
+#main .prolist table tr td input[type="button"] {
+  background: none;
+  border: 1px solid #ccc;
+}
+#main .prolist table tr td input[class="updateCount"] {
+  height: 30px;
+  width: 20px;
+  cursor: pointer;
+}
+#main .prolist table tr td input[class="txt"] {
+  height: 30px;
+  width: 40px;
+}
+#main .prolist table tr td input[class="single"] {
+  margin-left: 12px;
+}
+#main .prolist table tr .pro-price-tol {
+  color: #f60;
+}
+#main .prolist table tr .tr-center {
+  text-align: center;
+}
+#main .prolist .prosum {
+  margin: 30px 10px;
+  font-size: 18px;
+  text-align: right;
+  line-height: 30px;
+}
+#main .prolist .prosum i {
+  font-style: normal;
+  color: #666;
+  margin: 0 10px;
+}
+#main .prolist .gomoney {
+  text-align: right;
+}
+#main .prolist .gomoney button {
+  width: 120px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  border: 0;
+  background: #FF6600;
+  color: #fff;
+}
+
+.delBtn {
+  cursor: pointer;
+}
+
+.clearshopcar {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=shopcar.css.map */

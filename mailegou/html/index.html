@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/index.css" />
+		<style type="text/css">
+			.icon {
+			   width: 1em; height: 1em;
+			   vertical-align: -0.15em;
+			   fill: currentColor;
+			   overflow: hidden;
+			}
+		</style>
+		<script src="../js/jquery-1.11.1.min.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<!--头部-->
+			<header>
+			<div class="top_no">
+				<div class="top_no_img">
+					<img src="../img/50.jpg"/>
+				</div>
+				<span id="top_no_close">关闭</span>
+			</div>
+			<div class="nav">
+				<div class="article">
+					<ul class="top_nav_l">
+						<li class="top_nav_menu top-shouye">
+							<a href="/">
+								<span class="bgpic top-shoupic"></span>
+								<span>麦乐购首页</span>
+							</a>
+							<span class="login-after-none">
+								<a href="html/login-register.html?status=login">
+									<span>请登录</span>
+								</a>
+								<a href="html/login-register.html?status=register" class="top-register">
+									<span>免费注册</span>
+								</a>
+							</span>
+						</li>
+						<li class="top-nav-menu top-otherlogin">
+							<span>其他登录方式 :</span>
+							<span class="bgpic top-qqpic"></span>
+							<span class="bgpic top-zfbpic"></span>
+							<span class="bgpic top-360pic"></span>
+							<span class="bgpic top-wbpic"></span>
+						</li>
+						<li class="top-nav-menu top-kefu">
+							<span>联系客服:<strong>400-666-6600</strong></span>
+						</li>
+					</ul>
+					<ul class="top-nav-r">
+						<li class="top-nav-menu top-mymlg ">
+							<a href="#">
+								<span>我的麦乐购</span>
+								<span class="bgpic xsjpic"></span>
+							</a>
+							<ul class="top-nav-menu-two top-mymlg-two">
+									<li><a href="html/stopcar.html">我的订单</a></li>
+									<li><a href="javascript:;">我的账户</a></li>
+									<li><a href="javascript:;">麦豆兑换</a></li>
+									<li><a href="javascript:;">我的优惠劵</a></li>
+									<li><a href="javascript:;">我的收藏</a></li>
+							</ul>
+						</li>
+						<li class="top-nav-menu">
+							<span class="geduan">|</span>
+						</li>
+						<li class="top-nav-menu top-shoucang">
+							<a href="#">
+								<span class="bgpic sjxpic"></span>
+								<span>收藏麦乐购</span>
+							</a>
+						</li>
+						<li class="top-nav-menu">
+							<span class="geduan">|</span>
+						</li>
+						<li class="top-nav-menu top-mama">
+							<a href="#">
+								<span>妈妈推广计划</span>
+							</a>
+						</li>
+						<li class="top-nav-menu">
+							<span class="geduan">|</span>
+						</li>
+						<li class="top-nav-menu top-goods">
+							<a href="#">
+								<span class="bgpic goodspic"></span>
+								<span>手机麦乐购</span>
+							</a>
+							<div class="top-nav-menu-two top-goods-two">
+								<img src="../img/ewm.jpg" />
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="head-top">
+				<div class="search">
+					<a href="#" class="head-top-l">
+						<img src="../img/logo.jpg" alt="logo" />
+					</a>
+					<form>
+						<input type="text" id="searchinp" placeholder="请输入商品名称，支持拼音搜索" onfocus="this.placeholder=''" onblur="this.placeholder='请输入商品名称，支持拼音搜索';"/>
+						<input type="submit" value="搜索"/>
+					</form>
+					<ul class="search-show" id="u">
+						<!--<li>花王</li>-->
+					</ul>
+					<div class="hot">
+						热门关键词：
+						<a href="#" class="on">小安素</a>
+						<a href="#" class="on">防晒</a>
+						<a href="#">牛栏</a>
+						<a href="#">花王</a>
+						<a href="#">美素</a>
+						<a href="#">爱他美</a>
+						<a href="#">karicare</a>
+						<a href="#">喜宝</a>
+					</div>
+				</div>
+				<a href="#" class="head-top-r">
+					<img src="../img/header2.jpg" />
+				</a>
+			</div>
+			<div class="article nav-ind">
+				<div class="open-menu-btn">
+					<span class="open-menu-con">全部商品分类</span>
+					<!---------------------------------leftmenu----------------------------------------------->
+					<div class="menubox">
+						<ul class="menubox-left">
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>宝宝奶粉</h5>
+								<div class="left-mgroup-span">
+									<span>牛奶粉</span>
+									<span>羊奶粉</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>宝宝辅食</h5>
+								<div class="left-mgroup-span">
+									<span>米粉</span>
+									<span>宝宝零食</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>营养保健</h5>
+								<div class="left-mgroup-span">
+									<span>宝宝营养</span>
+									<span>成人营养</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>宝宝用品</h5>
+								<div class="left-mgroup-span">
+									<span>纸尿裤</span>
+									<span>喂养</span>
+									<span>洗护</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>宝宝服饰</h5>
+								<div class="left-mgroup-span">
+									<span>婴幼服饰</span>
+									<span>童装</span>
+									<span>童鞋</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>宝宝玩具</h5>
+								<div class="left-mgroup-span">
+									<span>婴幼玩具</span>
+									<span>遥控/电动</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>孕产妇用品</h5>
+								<div class="left-mgroup-span">
+									<span>孕妇营养</span>
+									<span>产前产后</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>个护化妆</h5>
+								<div class="left-mgroup-span">
+									<span>夏季防晒</span>
+									<span>面部护肤</span>
+								</div>
+							</li>
+							<li class="left-menu-group open-m">
+								<i></i>
+								<h5>居家生活</h5>
+								<div class="left-mgroup-span">
+									<span>食品饮料</span>
+									<span>生活日用</span>
+								</div>
+							</li>
+						</ul>
+						<div class="menubox-con">
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>优惠套餐</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>适用年龄</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>奶粉分类</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">美国嘉宝Gerber</a>
+										<a href="#" class="menubox-two-con-color">美国世界最好Earth's Best</a>
+										<a href="#">美国禧贝Happybady</a>
+										<a href="#" class="menubox-two-con-color">德国长发公主Rapunzel</a>
+										<a href="#">ZEK</a>
+										<a href="#" class="menubox-two-con-color">天然世家</a>
+										<a href="#">韩国宝嘟嘟</a>
+										<a href="#">美国Yummy Earth</a>
+										<a href="#">亨氏Heinz</a>
+										<a href="#">韩国海地村</a>
+										<a href="#">LittleFreddie</a>
+										<a href="#" class="menubox-two-con-color">韩国托马斯Thomas</a>
+										<a href="#">伊威Eatwes</a>
+										<a href="#">荷兰牛栏</a>
+										<a href="#">方广</a>
+										<a href="#">英国艾拉厨房</a>
+										<a href="#">韩国宝宝福德Bady food</a>
+										<a href="#" class="menubox-two-con-color">意大利黛乐Dalla Costa</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>辅食分类</h3>
+										<a href="#" class="menubox-two-con-color">米粉/麦粉/粥</a>
+										<a href="#">肉泥/果泥/菜泥</a>
+										<a href="#">饮料/果汁</a>
+										<a href="#">调味/拌饭/油</a>
+										<a href="#">鱼肠/肉肠</a>
+										<a href="#">面条类</a>
+										<a href="#">宝宝零食</a>
+										<a href="#">宝宝辅食(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>月龄</h3>
+										<a href="#">辅食添加初期</a>
+										<a href="#">4-6个月</a>
+										<a href="#">7-9月</a>
+										<a href="#">10-12月</a>
+										<a href="#">12-36个月</a>
+										<a href="#">4-36个月</a>
+										<a href="#">6-36个月</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>优惠套餐</h3>
+										<a href="#">2瓶优惠</a>
+										<a href="#" class="menubox-two-con-color">4盒优惠</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>宝宝营养热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>功效</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>营养人群</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>成人营养热门品牌</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>纸尿裤/湿巾</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>喂养用品</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>洗护/护理</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>婴幼服饰</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>童装</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>童鞋</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>优惠套餐</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>适用年龄</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>奶粉分类</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>优惠套餐</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>适用年龄</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>奶粉分类</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>优惠套餐</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>适用年龄</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>奶粉分类</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+							<div class="menubox-two">
+								<div class="menubox-two-con">
+									<div class="menubox-two-con-group">
+										<h3>热门品牌</h3>
+										<a href="#">荷兰牛栏Nutrilon</a>
+										<a href="#" class="menubox-two-con-color">德国爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国喜宝Hipp</a>
+										<a href="#">荷兰美素Hero Baby</a>
+										<a href="#">英国牛栏Cow & Gate</a>
+										<a href="#" class="menubox-two-con-color">新西兰爱他美Aptamil</a>
+										<a href="#" class="menubox-two-con-color">德国他福芬Topfer</a>
+										<a href="#">英国爱他美Aptamil</a>
+										<a href="#">新西兰Karicare</a>
+										<a href="#">澳洲a2</a>
+										<a href="#">德国凯莉泓乐Holle</a>
+										<a href="#">英国Nannycare</a>
+										<a href="#" class="menubox-two-con-color">澳洲贝拉米Bellamy's</a>
+										<a href="#" class="menubox-two-con-color">英国纽康特Neocate</a>
+										<a href="#">美国美赞臣Meadjohnson</a>
+										<a href="#">美国雅培Similac</a>
+										<a href="#">新西兰惠氏Wyeth</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>成人奶粉/食品饮料</h3>
+										<a href="#" class="menubox-two-con-color">买七送一</a>
+										<a href="#">4罐优惠</a>
+										<a href="#">2罐优惠</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>生活日用/居家/布艺</h3>
+										<a href="#">0-6个月</a>
+										<a href="#">6-12个月</a>
+										<a href="#" class="menubox-two-con-color">1-2岁</a>
+										<a href="#">2-3岁</a>
+										<a href="#">3-6岁</a>
+										<a href="#">儿童奶粉</a>
+										<a href="#" class="menubox-two-con-color">儿童奶粉(直邮)</a>
+									</div>
+									<div class="menubox-two-con-group">
+										<h3>个护健康</h3>
+										<a href="#" class="menubox-two-con-color">牛奶粉</a>
+										<a href="#" class="menubox-two-con-color">羊奶粉</a>
+										<a href="#" class="menubox-two-con-color">有机奶粉</a>
+										<a href="#">益生菌奶粉</a>
+										<a href="#">牛乳蛋白过敏奶粉</a>
+										<a href="#" class="menubox-two-con-color">乳糖不耐受奶粉</a>
+										<a href="#">早产儿奶粉</a>
+										<a href="#">孕妇奶粉</a>
+										<a href="#" class="menubox-two-con-color">宝宝奶粉直邮</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ul class="nav-ind-list">
+					<li><a href="/">首页</a></li>
+					<li><a href="html/list.html">进口奶粉</a></li>
+					<li><a href="javascript:;">发现好货</a></li>
+					<li><a href="javascript:;">整点抢</a></li>
+					<li><a href="javascript:;">天天特卖</a></li>
+					<li><a href="javascript:;">正品保证</a></li>
+					<li><a href="javascript:;">海外直邮</a></li>
+					<li><a href="javascript:;">国家馆</a></li>
+					<li><a href="javascript:;">行业报告</a></li>
+					<li class="active"></li>
+				</ul>
+				<div class="nav-cart">
+					<a href="html/stopcar.html">去购物车结算</a>
+					<span id="stopNum">0</span>
+				</div>
+			</div>
+		</header>
+			<!--article-->
+			<article>
+				<!--轮播图-->
+				<div class="lbt">
+					<ul class="lbt_list">
+						<li style="display: block; background: rgb(209,8,33);"><img src="../img/1.jpg" /></li>
+						<li style="background:rgb(254,222,204);"><img src="../img/2.jpg" /></li>
+						<li style="background:rgb(254,228,229);"><img src="../img/3.jpg" /></li>
+						<li style="background:rgb(254,226,212);"><img src="../img/4.jpg" /></li>
+						<li style="background:rgb(131,215,238);"><img src="../img/5.jpg" /></li>
+					</ul>
+					<ol class="lbt_ol">
+						<li><img src="../img/1-1.jpg" /></li>
+						<li><img src="../img/1-2.jpg" /></li>
+						<li><img src="../img/1-3.jpg" /></li>
+						<li><img src="../img/1-4.jpg" /></li>
+						<li><img src="../img/1-5.jpg" /></li>
+					</ol>
+				</div>
+				<!--right menu-->
+				<div class="menuright">
+					<img src="../img/menur.jpg" />
+				</div>
+			</article>
+			<!--广告位-->
+			<div class="article guanggao mtop25">
+				<a href="html/list.html" class="guanggao_le">
+					<img src="../img/ggpw1.jpg" />
+				</a>
+				<a href="#" class="guanggao_ri">
+					<img src="../img/ggpw2.jpg" />
+				</a>
+			</div>
+			<!--天天特卖-->
+			<div class="article tiantian mtop25">
+					<div class="common-tit tiantian-tit-top">
+						<h2>天天特卖</h2>
+						<div class="common-bet-con">
+							<span class="common-betcon-ani">
+								<i>每</i>
+								<i>天</i>
+								<i>上</i>
+								<i>新</i>
+								<i>，</i>
+								<i>天</i>
+								<i>天</i>
+								<i>特</i>
+								<i>惠</i>
+								<i>，</i>
+								<i>限</i>
+								<i>时</i>
+								<i>抢</i>
+								<i>购</i>
+								<i>！</i>
+							</span>
+						</div>
+						<a href="#">更多></a>
+					</div>
+					<div class="tiantian-content">
+						<div class="tian-con-group">
+							<img src="../img/tiantian2.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>7.7</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian1.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>7.7</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian2.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>8</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian1.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>7.7</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian1.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>7.7</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian1.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>6</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian1.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>7.7</i>折起
+								</span>
+							</div>
+						</div>
+						<div class="tian-con-group">
+							<img src="../img/tiantian1.jpg" />
+							<div class="tian-bottom">
+								<span class="tian-con-gro-l">
+									<p>膳魔师THERMOS品牌专场</p>
+									<p class="tian-font-r">剩余2017天21小时57分27秒</p>
+								</span>
+								<span class="tian-con-gro-r">
+									<i>7.7</i>折起
+								</span>
+							</div>
+					   </div>
+					</div>
+			</div>
+			<!--吸顶的楼层-->
+			<div class="bar" id="bar">
+				<div class="article">
+					<span class="bar-menu-con">楼层直达</span>
+					<span>|</span>
+					<ul class="bar-ind-list">
+						<li>宝宝奶粉</li>
+						<li>宝宝辅食</li>
+						<li>营养保健</li>
+						<li>宝宝用品</li>
+						<li>宝宝服饰</li>
+						<li>宝宝玩具</li>
+						<li>孕产妇用品</li>
+						<li>个护化妆</li>
+						<li>居家生活</li>
+					</ul>
+				</div>
+			</div>
+			<!--层数-->
+			<div class="floor">
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>1F</b>宝宝奶粉</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>2F</b>宝宝辅食</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>3F</b>营养保健</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>4F</b>宝宝用品</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>5F</b>宝宝服饰</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>6F</b>宝宝玩具</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>7F</b>孕产妇用品</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>8F</b>个护化妆</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="article mtop25 floorcon">
+					<div class="floor-con">
+						<div class="floor-left">
+							<div class="floor-left-top">
+								<h2><b>9F</b>居家生活</h2>
+							</div>
+							<div class="floor-left-bet">
+								<a href="#" class="floor-left-color">牛奶粉</a>
+								<a href="#">羊奶粉</a>
+								<a href="#" class="floor-left-color">有机奶粉</a>
+								<a href="#">早产儿奶粉</a>
+								<a href="#">乳糖不耐受</a>
+								<a href="#" class="floor-left-color">牛乳过敏</a>
+								<a href="#">益生菌奶粉</a>
+								<a href="#">0-6个月</a>
+								<a href="#">6-12个月</a>
+								<a href="#">1-2岁</a>
+								<a href="#">2-3岁</a>
+								<a href="#">3-6岁</a>
+								<a href="#">儿童奶粉</a>
+							</div>
+							<div class="floor-left-bottom">
+								<ul class="floor-left-bottom-xlb">
+									<li>
+										<a href="#"><img src="../img/floorleft1.jpg"/></a>
+										<a href="#"><img src="../img/floorleft2.jpg"/></a>
+										<a href="#"><img src="../img/floorleft3.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft4.jpg"/></a>
+										<a href="#"><img src="../img/floorleft5.jpg"/></a>
+										<a href="#"><img src="../img/floorleft6.jpg"/></a>
+									</li>
+									<li>
+										<a href="#"><img src="../img/floorleft7.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+										<a href="#"><img src="../img/floorleft8.jpg"/></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="floor-bet">
+							<div class="floor-bet-top">
+								<img src="../img/floor.jpg" />
+							</div>
+							<div class="floor-bet-bottom">
+								<img src="../img/floor1.jpg" />
+							</div>
+						</div>
+						<div class="floor-right">
+							<div class="floor-right-l">
+								<div class="floor-right-l-t">
+									<img src="../img/floor4.jpg"/>
+								</div>
+								<div class="floor-right-l-b">
+									<img src="../img/floor5.jpg"/>
+								</div>
+							</div>
+							<div class="floor-right-r">
+								<div class="floor-right-r-t">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-z">
+									<img src="../img/floor5.jpg"/>
+								</div>
+								<div class="floor-right-r-b">
+									<img src="../img/floor2.jpg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--show-->
+			<div class="article show mtop15">
+				<div class="daren">
+					<div class="common-tit show-tit-top">
+						<h2>达人推荐</h2>
+						<div class="common-bet-con">
+							<span class="common-betcon-ani">
+								<i>超</i>
+								<i>级</i>
+								<i>达</i>
+								<i>人</i>
+								<i>的</i>
+								<i>"</i>
+								<i>购</i>
+								<i>"</i>
+								<i>秘</i>
+								<i>籍</i>
+							</span>
+						</div>
+					</div>
+					<div class="daren-wrap">
+						<ul class="daren-con">
+							<li>
+								<img src="../img/daren1.jpg" alt="宝宝零食" />
+								<div class="daren-li-bot">
+									<b>宝宝零食&emsp;"环游记"&emsp;带着嘴巴去旅行</b>
+									<p>很多妈妈不敢给宝宝吃零食，担心零食的营养价值不够，或影响宝宝吃正餐的效果。其实只要选对健康小零食，营养和健康可以兼顾的哦！</p>
+								</div>
+							</li>
+							<li>
+								<img src="../img/daren2.jpg" alt="宝宝护肤" />
+								<div class="daren-li-bot">
+									<b>宝宝皮肤擦啥哟？护肤有讲究</b>
+									<p>宝宝的娇嫩肌肤不同于成人，在选购护肤品时要慎之又慎。不同季节需要用不同性质的护肤品，当然还要根据宝宝的肤质和适应情况而定。</p>
+								</div>
+							</li>
+							<li>
+								<img src="../img/daren3.jpg" alt="养娃秘籍" />
+								<div class="daren-li-bot">
+									<b>精致养娃秘籍</b>
+									<p>钟丽缇、孙俪、杨幂、叶一茜等辣妈的带娃秘籍，分分钟教会你事业家庭两不误，精致的生活你也可以！</p>
+								</div>
+							</li>
+							<li>
+								<img src="../img/daren4.jpg" alt="宝宝书包" />
+								<div class="daren-li-bot">
+									<b>宝宝书包发布“惠”</b>
+									<p>LOOK,LOOK,这里有萌宝上学、逛街、出游的超实惠包包、轻松带走宝宝所有心仪的东东，走到哪里，哪里就有回头率！</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="shaidan">
+					<div class="common-tit show-tit-top">
+						<h2>晒单区</h2>
+						<div class="common-bet-con">
+							<span class="common-betcon-ani">
+								<i>分</i>
+								<i>享</i>
+								<i>您</i>
+								<i>购</i>
+								<i>物</i>
+								<i>的</i>
+								<i>喜</i>
+								<i>悦</i>
+								<i>！</i>
+							</span>
+						</div>
+					</div>
+					<div class="shaidan-con">
+						<div class="shaidan-con-top">
+							<img src="../img/shaidan1.jpg"/>
+							<p><span>白银会员</span></p>
+							<p>保温效果好，漂亮</p>
+						</div>
+						<div class="shaidan-con-bot">
+							<img src="../img/shaidan1.jpg"/>
+							<p><span>普通会员</span></p>
+							<p>正品,值得购买正品,值得购买正品,值得购买正品值得购买正品,值得购买正品,值得购买正品,值得购买正品,值得购买正品,值得购买正品,值得购买正品值得购买正品,值得购买正品,值得购买正品,值得购买正品值得购买正品值得购买</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--footimg-->
+			<div class="footimg"></div>
+			<!--尾部-->
+			<footer>
+				<div class="foot-top">
+					<div class="foot-top-con">
+						<div class="foot-top-con-group">
+							<div class="foot-top-con-g-t">
+								<strong>购物指南</strong>
+							</div>
+							<ul>
+								<li><a href="#">购物流程</a></li>
+								<li><a href="#">正品保证</a></li>
+								<li><a href="#">常见问题</a></li>
+								<li><a href="#">品牌大全</a></li>
+							</ul>
+						</div>
+						<div class="foot-top-con-group">
+							<div class="foot-top-con-g-t">
+								<strong>配送方式</strong>
+							</div>
+							<ul>
+								<li><a href="#">跨境电商介绍</a></li>
+								<li><a href="#">报关说明</a></li>
+								<li><a href="#">配送说明</a></li>
+								<li><a href="#">国际快递查询</a></li>
+								<li><a href="#">国内快递查询</a></li>
+							</ul>
+						</div>
+						<div class="foot-top-con-group">
+							<div class="foot-top-con-g-t">
+								<strong>支付方式</strong>
+							</div>
+							<ul>
+								<li><a href="#">支付方式介绍</a></li>
+								<li><a href="#">优惠劵介绍</a></li>
+								<li><a href="#">余额支付</a></li>
+							</ul>
+						</div>
+						<div class="foot-top-con-group">
+							<div class="foot-top-con-g-t">
+								<strong>售后服务</strong>
+							</div>
+							<ul>
+								<li><a href="#">联系客服</a></li>
+								<li><a href="#">验货签收</a></li>
+								<li><a href="#">退换货政策</a></li>
+								<li><a href="#">退款说明</a></li>
+								<li><a href="#">关于发票</a></li>
+							</ul>
+						</div>
+						<div class="foot-top-con-group">
+							<div class="foot-top-con-g-t">
+								<strong>特色服务</strong>
+							</div>
+							<ul>
+								<li><a href="#">会员级别</a></li>
+								<li><a href="#">商务会员卡</a></li>
+								<li><a href="#">VIP会员尊享卡</a></li>
+								<li><a href="#">妈妈推广计划</a></li>
+							</ul>
+						</div>
+						<div class="foot-ewm">
+							<div class="foot-ewm-top">
+								手机麦乐购
+							</div>
+							<img src="../img/footewm.jpg"/>
+						</div>
+					</div>
+				</div>
+				<div class="foot-bottom">
+					<p class="foot-t">
+						<a href="#">关于</a>
+						<span>|</span>
+						<a href="#">保税店专区</a>
+						<span>|</span>
+						<a href="#">服务条款</a>
+						<span>|</span>
+						<a href="#">商户合作</a>
+						<span>|</span>
+						<a href="#">O2O合作</a>
+						<span></span>
+						<a href="#">联系我们</a>
+						<span>|</span>
+						<a href="#">友情链接</a>
+						<span>|</span>
+						<a href="#">诚聘英才</a>
+						<span>|</span>
+						<a href="#">手机端</a>
+						<span>|</span>
+						<a href="#">意见建议</a>
+						<span>|</span>
+						<a href="#">媒体报道</a>
+					</p>
+					<p>
+						<img src="../img/gonganbeian.png" />京公网安备：11010102000812号|中华人民共和国出版物经营许可证编号：150023|广电制作经营许可证:(京)字第06356号
+					</p>
+					<p>网路文化经营许可证：京网文(2016)4048-509号|食品经营许可证编号：JY11101070034785|食品卫生许可证编号：110101_JX0020|互联网药品信息服务证书编号:(京)-2016-0095</p>
+					<p>Copyright 2006 - 2016北京天使圣婴科技有限公司版权所有|经营许可证编号:京ICP证150027号|营业执照:911101010672694772|京ICP备14022296号|中国服务热线:400-666-6600</p>
+					<div class="foot-t-b">
+						<a href="#"><img src="../img/foot.jpg"/></a>
+						<a href="#"><img src="../img/foot.jpg"/></a>
+						<a href="#"><img src="../img/foot.jpg"/></a>
+					</div>
+				</div>
+			</footer>
+
+			<!--fixed固定栏-->
+			<div class="fixbox">
+				<ul>
+					<li onclick="location.href='stopcar.html'">
+						<svg class="icon" aria-hidden="true">
+					 		 <use xlink:href="#icon-gouwuche1"></use>
+						</svg>
+						<a href="#">购物车</a>
+					</li>
+					<li>
+						<svg class="icon" aria-hidden="true">
+					 		 <use xlink:href="#icon-anonymous-iconfont"></use>
+						</svg>
+						<a href="javascript:;">联系<br>客服</a>
+						<div class="fixed-kehu">
+							<h3>联系客服</h3>
+							<p><img src="../img/kufu.jpg" /></p>
+						</div>
+					</li>
+					<li id="returntop">
+						<svg class="icon" aria-hidden="true">
+					 		 <use xlink:href="#icon-icon075"></use>
+						</svg>
+						<a href="#">返回<br>顶部</a>
+					</li>
+				</ul>
+			</div>
+		<div>
+			
+		
+	</body>
+</html>
+<script src="../fontstyle/iconfont.js"></script>
+<script src="../js/public.js"></script>
+<script>
+	window.onload = function(){
+		var scr = document.createElement("script");
+		document.body.appendChild(scr);
+		scr.src="../js/common.js";
+		
+		var index = document.createElement("script");
+		document.body.appendChild(index);
+		index.src="../js/index.js";
+		
+		var s = document.createElement("script");
+		document.body.appendChild(s);
+		s.src="../js/search.js";
+	}
+</script>
