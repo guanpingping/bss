@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/default.css" type="text/css"/>
+	</head>
+	<body>
+		<div class="frameleft">
+			<ul>
+				<li class="active"><a href="user/list.html" target="right">会员系统</a></li>
+				<li><a href="goods/list.html" target="right">商品系统</a></li>
+				<li><a href="order/list.html" target="right">订单系统</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$(function(){
+		$("li").click(function(){
+			$(this).addClass("active").siblings().removeClass("active");
+		})
+	})
+</script>

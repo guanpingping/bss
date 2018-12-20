@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+}
+
+#admin-wrapper{
+	width: 100%;
+	height: 100%;
+	background: #444444;
+}
+
+.login{
+	width: 36%;
+	padding: 10px;
+	background:black;
+	position: absolute;
+	left: 32%;
+	top: 20%;
+	color: #fff;
+	box-sizing: border-box;
+}
+
+.title{
+	text-align: center;
+	font-size: 1.28rem;
+	line-height: 60px;
+}
+.content{
+	padding:0 20px;
+	line-height: 2rem;
+}
+.content input[type="text"],
+.content input[type="password"]{
+	width: 60%;
+	height: 2rem;
+	margin-left: 10%;
+}
+.content input[type="submit"]{
+	height: 2rem;
+	width: 20%;
+	margin: 0 auto;
+	display: block;
+}
+.top-wrapper{
+	display: block;
+	height:50px;
+	width: 100%;
+	background: #428bca;
+	line-height: 50px;
+	padding: 0 5%;
+	box-sizing: border-box;
+	font-size:1.3rem;
+	color: #fff;
+}
+
+.frameleft{
+	width: 100%;
+	height: 100%;
+	padding: 10% 0 0;
+	box-sizing: border-box;
+	line-height: 40px;
+	background: lightsteelblue;
+	font-size: 1.2rem;
+	
+}
+.frameleft ul{
+	margin-left: 10px;
+	list-style: none;
+	text-align: center;
+}
+.frameleft ul li a{
+	text-decoration: none;
+	color: #444444;
+}
+.frameleft ul .active{
+	background: #fff;
+	border-radius: 5px 0 0 5px;
+}
+.frameright{
+	background: white;
+	font-size: 1.1rem;
+}
+.frameright table{
+	margin-top: 10px;
+	width: 98%;
+	margin: 0 auto;
+}
+.frameright table thead tr td{
+	background: steelblue;
+	color: white;
+}
+.frameright table td{
+	line-height: 40px;
+	height: 40px;
+	text-align: center;
+}
+.frameright table td a{
+	cursor: pointer;
+}
+.frameright table input[type="button"]{
+	margin: 0 5px;
+	background: steelblue;
+	border: 0;
+	color: #fff;
+	padding: 6px;
+	cursor: pointer;
+	outline: none;
+}
+.frameright-top{
+	width:98%;
+	margin: 0 auto;
+	line-height: 40px;
+}
+.frameright-top .search{
+	width: 30%;
+	height: 28px;
+	outline: none;
+}
+.frameright-top input[type=button]{
+	cursor: pointer;
+	border: #000000;
+	color: #FFF;
+	background: steelblue;
+	height: 32px;
+	padding: 0 10px;
+	outline: none;
+}
+
+.add{
+	width: 80%;
+	margin-left: 10px;
+}
+
+.frameright table td img{
+	width: 20px;
+	height: 20px;
+}
+
+#loading{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

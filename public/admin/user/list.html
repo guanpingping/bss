@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../style/default.css" type="text/css" />
+	</head>
+	<body class="frameright">
+		<div>位置：后台 &gt; 用户中心 &gt; 列表 </div>
+		<div class="frameright-top">
+			全选<input type="checkbox" class="checkall" />
+			<input type="button" value="批量删除" class="batchdel"/>
+			<input type="text" class="search"/>
+			<input type="button" value="搜索" class="searchbtn"/>
+		</div>
+ 		<table>
+			<thead>
+				<tr>
+					<td>编号</td>
+					<td>用户名称</td>
+					<td>最后登录的IP</td>
+					<td>最后登录的时间</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	var page = 1;
+	var maxpage;
+	var pagenum = 4;
+	var wd = "";
+	function handle(){
+		$.get("/userlist",{"page":page,"pagenum":pagenum,"wd":wd},function( result ){
+			var data = JSON.parse(result).data;
+			maxpage = JSON.parse(result).maxpage;
+			var str = "";
+			for( var i = 0 , len = data.length; i < len ; i++ ){
+				str += `
+						<tr>
+							<td><input type="checkbox" value="${data[i]._id}"></td>
+							<td>${data[i].uname}</td>
+							<td>${data[i].ip}</td>
+							<td>${data[i].time}</td>
+							<td>
+								<a>详情</a>
+								<a>修改</a>
+								<a>删除</a>
+							</td>
+						</tr>
+						`;
+			}
+			$("tbody").html(str);
+		
+			//翻页功能
+			$("tfoot tr td").html(`
+				${page+"/"+maxpage}
+				<input type='button' value="首页"/>
+				<input type='button' value="上一页"/>
+				<input type='button' value="下一页"/>
+				<input type='button' value="末页"/>
+			`);
+		})
+	}
+	handle();
+	
+	//翻页功能
+	$("tfoot").on("click","input",function(){
+		switch( $(this).val() ){
+			case"首页":
+				page = 1;
+				handle();
+				break;
+			case"上一页":
+				page--;
+				if( page < 1 ){
+					page = 1;
+				}
+				handle();
+				break;
+			case"下一页":
+				page++;
+				if( page > maxpage ){
+					page = maxpage;
+				}
+				handle();
+				break;
+			case"末页":
+				page  = maxpage;
+				handle();
+				break;
+			default:
+		}
+	})
+	
+	//搜索
+	$(".searchbtn").click(function(){
+		wd = $(".search").val();
+		handle();
+	})
+	
+	//删除修改详情
+	$("tbody").on("click","a",function(){
+		var tr = $(this).parent().parent();
+		var id = tr.find("input").val();
+		switch( $(this).html() ){
+			case"删除":
+				if(confirm("确认删除该项数据吗?")){
+					$.get("/user_del?id="+id, function( result ){
+						console.log(tr)
+						tr.remove();
+					})
+				}
+				break;
+			case"修改":
+				location.href = "update.html?id="+id;
+				break;
+			case"详情":
+				break;
+			default:
+		}
+	})
+	
+	//全选
+	$(".checkall").click( function(){
+		$("td input[type=checkbox]").prop( "checked" , this.checked );
+	})
+	
+	//批量删除
+	$(".batchdel").click( function(){
+		
+		var ck = $("td input:checked");
+		var f = confirm("确认删除吗？");
+		if( ck.length == 0 || !f ){
+			return;
+		}
+		var arr = [];
+		for( var i = 0 , len = ck.length ; i < len; i++ ){
+			//ck[i]找到是dom元素，ck.eq(i).val()是jq对象
+			arr.push( ck.eq(i).val() );
+		}
+		var str = arr.join(",");
+		//发送请求，进行删除
+		$.post("/user_del",{"ids": str },function( result ){
+			for( var i = 0 , len = ck.length ; i < len; i++ ){
+				ck[i].parentNode.parentNode.remove();
+			}
+		})
+	})
+</script>

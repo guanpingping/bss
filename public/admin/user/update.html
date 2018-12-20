@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body class="frameright">
+		<div>位置：后台 &gt; 用户中心 &gt; 修改 </div>
+		用户名称<input type="text"/><br>
+		<input type="submit" value="修改" class="update"/>
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+//	console.log(location.search);//"?id=**********"
+	$.get("/user_info",{"id":location.search.split("=")[1]},function( result ){
+//		console.log(result[0].uname)
+		$("input[type=text]").val( result[0].uname );
+	})
+	$(".update").click( function(){
+		var str = $("input[type=text]").val();
+		var id = 
+		$.get("/user_update",{"str":str,"id":location.search.split("=")[1]},function( result ){
+			alert(result);
+			location.href="list.html";//跳转到list.html
+		})
+	})
+</script>

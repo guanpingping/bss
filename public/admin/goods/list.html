@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link  rel="stylesheet" href="../style/default.css" type="text/css"/>
+	</head>
+	<body class="frameright">
+		<div>位置：后台 &gt; 商品中心 &gt; 列表</div>
+		<div class="frameright-top">
+			全选<input type="checkbox" class="checkall" />
+			<input type="button" value="批量删除" class="batchdel"/>
+			<input type="text" class="search"/>
+			<input type="button" value="搜索" class="searchbtn"/>
+			<input type="button" value="添加商品" />
+		</div>
+ 		<table>
+			<thead>
+				<tr>
+					<td>编号</td>
+					<td>商品名称</td>
+					<td>商品图片</td>
+					<td>商品详情</td>
+					<td>商品单价</td>
+					<td>操作</td>
+				</tr>
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<tr>
+					<td colspan="5"></td>
+				</tr>
+			</tfoot>
+		</table>
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	var page = 1;
+	var maxpage;
+	var pagenum = 4;
+	var wd = "";
+	function goodshandle(){
+		$.get("/goods_list",{"page":page,"pagenum":pagenum,"wd":wd},function(result){
+			maxpage = result.maxpage;
+			var str = '';
+			for( var i = 0 ; i < result.data.length ; i++ ){
+				str +=`
+						<tr>
+							<td>
+								<input type="checkbox" value="${result.data[i]._id}"/>
+							</td>
+							<td>${result.data[i].uname}</td>
+							<td><img src='${result.data[i].pic}'/></td>
+							<td>${result.data[i].con}</td>
+							<td>${result.data[i].price}</td>
+							<td>
+								<a>详情</a>
+								<a>修改</a>
+								<a>删除</a>
+							</td>
+						</tr>
+						`;
+			}
+			$("tbody").html(str);
+		})
+	}
+	goodshandle();
+	$("tbody").on("click","a",function(){
+		var id = $(this).parent().parent().find("input").val();
+		var tr = $(this).parent().parent();
+		console.log(id,tr);
+		switch($(this).html()){
+			case"详情":
+				break;
+			case"修改":
+				break;
+			case"删除":
+				if(confirm("确认删除吗？")){
+					
+				}
+				break;
+			default:
+		}
+	})
+	$(".frameright-top input[type=button]").click( function(){
+		switch( $(this).val() ){
+			case"添加商品":
+				location.href = "add.html";
+				break;
+			case"批量删除":
+				break;
+			case"搜索":
+				wd = $(".search").val();
+				goodshandle();
+				break;
+			default:
+			  
+		}
+	})
+</script>

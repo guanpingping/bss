@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="style/default.css" type="text/css" />
+	</head>
+	<body>
+		<div id="admin-wrapper">
+			<form class="login">
+				<div class="title">管理员登录</div>
+				<div class="content">
+					管理员名称：<input type="text" id="adminName" required/>
+					<br><br>
+					管理员密码：<input type="password" id="adminPass" required/>
+					<br><br>
+					<input type="submit" id="btn" value="登录" />
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+	$("form").on("submit",function( e ){
+		e.preventDefault();
+		var adminname =$("#adminName").val(),
+			adminpass = $("#adminPass").val();
+		$.post("/admin_login",{"adminname":adminname,"adminpass":adminpass},function( result ){
+			var result = JSON.parse( result );
+			if( result.state == 1){
+				alert("登录成功");
+				location.href = "main.html";
+			}else{
+				alert("登录失败");
+			}
+		})
+	})
+</script>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="../style/default.css" type="text/css"/>
+	</head>
+	<body class="frameright">
+		<form class="add">
+			商品名称：<br>
+			<input type="text" id="uname"/><br><br>
+			商品图片：<br>
+			<input type="file" id="pic"/><br><br>
+			商品详情<br>
+			<div id="editor"></div><br>
+			商品单价:<br>
+			<input type="text" id="price"/><br><span id="s1"></span><br>
+			<input type="submit" value="提交" id="btn" />
+		</form>
+		<div id="loading" style="display: none;"><img src="../../images/loading.gif"/></div>
+	</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/wangEditor/10.0.13/wangEditor.min.js"></script>
+<script type="text/javascript">
+	//富文本编辑器的创建
+	var E = window.wangEditor;
+	var editor = new E("#editor");
+	editor.customConfig.uploadImgServer = '/goods_upload'  // 上传图片到服务器
+	editor.customConfig.uploadFileName = 'img';
+	editor.create();
+	$("form").on("submit" ,function( e ){
+		//阻止sumbit按钮默认跳转
+		e.preventDefault ? e.preventDefault():e.returnValue = false;
+		if( flagprice ){
+			//与普通的Ajax相比，使用FormData 的最大优点就是可以异步上传二进制文件。
+			/*利用 FormData 对象，可以通过JavaScript键值对来模拟一系列表单控件，还可以使用 XMLHttpRequest的send() 方法来异步提交表单。*/
+			var fd = new FormData();
+			fd.append("uname",$("#uname").val());
+			fd.append("pic",pic.files[0]);
+			fd.append("conntent",editor.txt.html());
+			fd.append("price",$("#price").val());
+//			console.log(fd);
+			$("#loading").fadeIn();
+			$("#editor").hide();
+			$.ajax({
+		  		url: "/goods_add",
+		  		type: "POST",
+		  		data: fd,
+		  		success:function(result){
+		  			console.log( result );
+					alert("添加成功");
+					$("#editor").show();
+					$("#loading").fadeOut();
+		  		},
+		  		processData: false,  // 告诉jQuery不要去处理发送的数据
+		  		contentType: false  // 告诉jQuery不要去设置Content-Type请求头
+			});
+		}
+	})
+	
+	//flagprice
+	var flagprice = null;
+	$("#price").blur(function(){
+		var reg = /^\d+[\$￥]?$/;
+		var str = $(this).val();
+		if( reg.test( str ) ){
+			$("#s1").html("");
+			flagprice = true;
+		}else{
+			$("#s1").html("价格格式不正确");
+			flagprice = false;
+		}
+	})
+	
+</script>
